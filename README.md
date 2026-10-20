@@ -1,25 +1,14 @@
 <p align="center">
-  <img src="figures/logo_Enershare.png" alt="Enershare logo" height="80" />
-  &nbsp;&nbsp;&nbsp;
-  <img src="figures/logo_ENPOWER.png" alt="ENPOWER logo" height="80" />
+  <img src="figures/sitec_banner.svg" alt="SITEC - Sizing Tool for Energy Communities" width="800" />
 </p>
-
-```
-  ____   _____  ____   ____   _       _               
- |  _ \ | ____|/ ___| / ___| (_) ____(_) _ __    __ _ 
- | |_) ||  _| | |     \___ \ | ||_  /| || '_ \  / _` |
- |  _ < | |___| |___   ___) || | / / | || | | || (_| |
- |_| \_\|_____|\____| |____/ |_|/___||_||_| |_| \__, |
-                                                |___/ 
-```
 
 # Documentation
 
 The *REC Sizing* use case aims to provide an **optimal investment plan** for Renewable Energy Communities (REC) and 
-Citizen Energy Communities (CEC) under the *Enershare* and *ENPOWER* projects. 
+Citizen Energy Communities (CEC).
 
-To that end, a library was implemented, named ***rec_sizing*** (**R**enewable **E**nergy **C**ommunities **Sizing**), 
-that provides the user with several options for running a MILP optimization aimed at **minimizing the collective 
+To that end, the ***SITEC*** (**S**izing **T**ool for **E**nergy **C**ommunities) library was implemented 
+(Python package ```rec_sizing```), that provides the user with several options for running a MILP optimization aimed at **minimizing the collective 
 operation and investment costs** of the whole community. The MILP formulation not only schedules all controllable 
 assets (namely batteries) and the optimal internal exchanges that should be established within the REC 
 (a thorough explanation of the algorithms implemented is published [here](https://www.mdpi.com/1996-1073/16/3/1143)), 
@@ -95,3 +84,10 @@ install the library by using:
     ```shell
     from rec_sizing.optimization_functions import run_pre_collective_pool_milp as sizing
     ```
+
+## Acknowledgements
+
+This work was developed within the following projects:
+
+- **ENPOWER**: This project has received funding from the European Union’s Horizon Europe research and innovation programme under grant agreement No 101096354.
+- **ENERSHARE**: This project has received funding from the European Union’s Horizon Europe research and innovation programme under grant agreement No 101069831.
