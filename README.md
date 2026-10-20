@@ -4,15 +4,13 @@
 
 # Documentation
 
-The *REC Sizing* use case aims to provide an **optimal investment plan** for Renewable Energy Communities (REC) and 
-Citizen Energy Communities (CEC).
-
-To that end, the ***SITEC*** (**S**izing **T**ool for **E**nergy **C**ommunities) library was implemented 
-(Python package ```rec_sizing```), that provides the user with several options for running a MILP optimization aimed at **minimizing the collective 
-operation and investment costs** of the whole community. The MILP formulation not only schedules all controllable 
-assets (namely batteries) and the optimal internal exchanges that should be established within the REC 
-(a thorough explanation of the algorithms implemented is published [here](https://www.mdpi.com/1996-1073/16/3/1143)), 
-but also the optimal investments in new RES generation and/or storage capacities.
+***SITEC*** (**S**izing **T**ool for **E**nergy **C**ommunities) is a Python library (package ```rec_sizing```) that 
+provides an **optimal investment plan** for Renewable Energy Communities (REC) and Citizen Energy Communities (CEC). 
+It offers several options for running a MILP optimization aimed at **minimizing the collective operation and 
+investment costs** of the whole community. The MILP formulation not only schedules all controllable assets (namely 
+batteries) and the optimal internal exchanges that should be established within the REC (a thorough explanation of 
+the algorithms implemented is published [here](https://www.mdpi.com/1996-1073/16/3/1143)), but also the optimal 
+investments in new RES generation and/or storage capacities.
 
 **Notes**:
 - The optimization is perfomed over the individual meters in the REC, defined by the user in the request.
